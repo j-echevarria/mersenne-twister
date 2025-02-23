@@ -14,7 +14,7 @@ Here, we focus on the *Mersenne Twister algorithm*, developed in 1997. While it 
 available today, it remains the default pseudo-random generator in Python, as well as in many other programming
 languages including R, Ruby, MATLAB, and Julia.
 
-While the underlying algorithm is the same across these languages (specifically, the MT19937-32 version), each 
+While the underlying algorithm is the same across these languages (specifically, the MT19937 version), each 
 implementation has its own quirks. The goal of this repository is to recreate exactly the same behavior as Python's `random` 
 module (which is implemented in C).
 
