@@ -1,4 +1,4 @@
-# Mersenne Twister algorithm, as implemented by Python
+# Mersenne Twister algorithm, as implemented in Python
 
 A *pseudo-random number generator* (PRNG) is an algorithm that produces sequences of numbers $(x_i)_{i\in \mathbb{N}}$ designed 
 to imitate independently and identically distributed (IID) random variables from a given distribution. Despite appearing
