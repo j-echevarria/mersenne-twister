@@ -87,6 +87,7 @@ class MersenneTwister:
             if x & 1:
                 xa ^= 0x9908B0DF
             state[i] = state[(i + self._M) % self._N] ^ xa
+        self._index = 0
 
     def _generate_uint32(self) -> int:
         """
@@ -97,7 +98,6 @@ class MersenneTwister:
         """
         if self._index == self._N:
             self._twist()
-            self._index = 0
 
         x = self._state[self._index]
         self._index += 1
