@@ -4,7 +4,7 @@ A *pseudo-random number generator* (PRNG) is an algorithm that produces sequence
 to imitate independently and identically distributed (IID) random variables from a given distribution. Despite appearing
 random, these sequences are entirely deterministic, controlled by an initial value called the *seed*.
 
-Among all probability distributions, the uniform $U(0,1)$ is particularly important because it serves as a
+Among all probability distributions, the uniform distribution $U(0,1)$ is particularly important because it serves as a
 building block for sampling from other distributions. One of the earliest PRNGs for this distribution, the 
 [middle-square method](https://en.wikipedia.org/wiki/Middle-square_method), was 
 proposed in 1946. Since then, there have been many [improvements](https://en.wikipedia.org/wiki/List_of_random_number_generators#Pseudorandom_number_generators_(PRNGs)).
