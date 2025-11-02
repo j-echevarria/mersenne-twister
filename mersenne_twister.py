@@ -96,7 +96,9 @@ class MersenneTwister:
         # Lower R bits
         lower_mask = (1 << R) - 1
         for i in range(N):
-            x = (state[i] & upper_mask) + (state[(i + 1) % N] & lower_mask)
+            xu = state[i] & upper_mask
+            xl = state[(i + 1) % N] & lower_mask
+            x = xu + xl
             xa = x >> 1
             if x & 1:
                 xa ^= A
