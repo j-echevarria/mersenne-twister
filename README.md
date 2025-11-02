@@ -1,18 +1,16 @@
-# Mersenne Twister algorithm, as implemented in Python
+# Mersenne Twister algorithm, as implemented for Python
 
-A *pseudo-random number generator* (PRNG) is an algorithm that produces sequences of numbers $(x_i)_{i\in \mathbb{N}}$ designed 
-to imitate independently and identically distributed (IID) random variables from a given distribution. Despite appearing
-random, these sequences are entirely deterministic, controlled by an initial value called the *seed*.
+A _pseudo-random number generator_ (PRNG) is an algorithm that produces sequences of numbers designed
+to mimic independently and identically distributed (IID) random variables from a given distribution. Despite appearing
+random, these sequences are entirely deterministic, controlled by an initial value called the _seed_.
 
-Among all probability distributions, the uniform $U(0,1)$ is particularly important because it serves as a
-building block for sampling from other distributions. One of the earliest PRNGs for this distribution, the 
-[middle-square method](https://en.wikipedia.org/wiki/Middle-square_method), was 
-proposed in 1946. Since then, there have been many [improvements](https://en.wikipedia.org/wiki/List_of_random_number_generators#Pseudorandom_number_generators_(PRNGs)).
+Among all probability distributions, the uniform distribution $U(0,1)$ is particularly important because it serves as a
+building block to sample from other distributions. One of the earliest PRNGs, the
+[middle-square method](https://en.wikipedia.org/wiki/Middle-square_method), was proposed in 1946. Since then, there have been many [improvements](<https://en.wikipedia.org/wiki/List_of_random_number_generators#Pseudorandom_number_generators_(PRNGs)>).
 
-
-Here, we focus on the *Mersenne Twister algorithm*, developed in 1997. While it is no longer the best PRNG
-available today, it remains the default pseudo-random generator in Python, as well as in many other programming
-languages including R, Ruby, MATLAB, and Julia.
+Here, we focus on the _Mersenne Twister_ algorithm, introduced in 1997. While it is no longer the best PRNG
+available today, it remains the default pseudo-random generator in Python, as well as in many other
+languages including R, Ruby and Julia (as well as in Microsoft Excel and MATLAB).
 
 While the underlying algorithm is the same across these languages (specifically, the MT19937 version), each 
 implementation has its own quirks. The goal of this repository is to recreate exactly the same behavior as Python's `random` 
