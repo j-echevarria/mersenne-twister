@@ -122,10 +122,10 @@ class MersenneTwister:
         return x
 
     def _generate_uint32(self) -> int:
-        """Generates an unsigned w-bit integer.
+        """Generates an unsigned 32-bit integer.
 
         Returns:
-            Pseudo-random unsigned w-bit integer.
+            Pseudo-random unsigned 32-bit integer.
         """
         if self._index == N:
             self._twist()
